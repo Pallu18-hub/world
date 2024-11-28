@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel World</title>
+    <!-- Embedded CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0d47a1;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .package {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .package img {
+            width: 100%; /* Full width of the container */
+            height: 250px; /* Adjusted height */
+            object-fit: cover; /* Ensures image fills box without distortion */
+            border-radius: 8px;
+        }
+
+        .package h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .package p {
+            font-size: 1rem;
+            color: #777;
+            margin: 10px 0;
+        }
+
+        .package .price {
+            font-size: 1.3rem;
+            color: #00bfae;
+            margin-bottom: 15px;
+        }
+
+        .package button {
+            background-color: #0d47a1;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .package button:hover {
+            background-color: #1565c0;
+        }
+
+        section {
+            padding: 40px 0;
+            background-color: #e3f2fd;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .destinations {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .destination {
+            background-color: #fff;
+            margin: 15px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .destination img {
+            width: 100%;  /* Full width of the container */
+            height: 200px; /* Adjusted height */
+            object-fit: cover; /* Ensures image fills box without distortion */
+            border-radius: 8px; /* Rounded corners for the image */
+        }
+
+        .destination h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #0d47a1;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .contact-form button {
+            background-color: #0d47a1;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            width: 100%; /* Adjusted width */
+            border-radius: 1px;
+        }
+
+        .contact-form button:hover {
+            background-color: #1565c0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Travel World</h1>
+        <p>Your next adventure starts here!</p>
+    </header>
+
+    <!-- Travel Packages Section -->
+    <section>
+        <h2>Our Popular Travel Packages</h2>
+        <div class="container">
+            <div class="package">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris Adventure</h3>
+                <p>Discover the romantic city of Paris with guided tours and more.</p>
+                <p class="price">$1,200</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="bali-1-1679062958.profileImage.2x-scaled-webp.webp" alt="Bali">
+                <h3>Bali Escape</h3>
+                <p>Relax on the beautiful beaches of Bali and explore tropical nature.</p>
+                <p class="price">$900</p>
+                <button>Book Now</button>
+            </div>
+
+            <div class="package">
+                <img src="New_York_City-scaled.jpg" alt="New York">
+                <h3>New York City Tour</h3>
+                <p>Experience the excitement of the Big Apple with city tours and shows.</p>
+                <p class="price">$1,500</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+    <section>
+        <h2>Top Destinations</h2>
+        <div class="destinations">
+            <div class="destination">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+
+            <div class="destination">
+                <img src="bali-1-1679062958.profileImage.2x-scaled-webp.webp" alt="Bali">
+                <h3>Bali</h3>
+            </div>
+
+            <div class="destination">
+                <img src="New_York_City-scaled.jpg" alt="New York">
+                <h3>New York</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section>
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <h3>Have any questions? Reach out to us!</h3>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Travel World</p>
+        <p><a href="mailto:info@travelworld.com">Contact Us</a></p>
+    </footer>
+
+    <!-- Embedded JavaScript -->
+    <script>
+        // Contact form submission
+        const form = document.getElementById('contact-form');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Your message has been sent!');
+                form.reset(); // Reset form after submission
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+
+</body>
+</html>
